@@ -1,0 +1,8 @@
+SELECT COUNT(*) USERS
+FROM (
+    SELECT USER_ID
+    FROM USER_INFO
+    WHERE AGE >= 20
+        AND AGE <= 29
+        AND TO_CHAR(JOINED, 'YYYY') = '2021'
+    )
